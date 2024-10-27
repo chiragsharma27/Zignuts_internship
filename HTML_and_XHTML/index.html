@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of HTML</title>
+    <style>
+        caption {
+            text-align: center;
+        }
+
+        .container {
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- HTML Heading tags -->
+    <h1>Basics of HTML</h1>
+    <h2>Basics of HTML</h2>
+    <h3>Basics of HTML</h3>
+    <h4>Basics of HTML</h4>
+    <h5>Basics of HTML</h5>
+    <h6 title="h6">Basics of HTML</h6>
+
+    <hr>
+
+    <!-- tags for text to show them in certain manner -->
+    <p>Welcome to <em>my</em> brand new website. This site will be my <strong>new<strong> home on the web.</p>
+    <p>This is a <mark>marked</mark> paragraph.</p>
+    <p>This is a <del>deleted</del> paragraph.</p>
+    <p>This is a <ins>inserted</ins> paragraph.</p>
+    <p>This is a <small>small</small> paragraph.</p>
+    <p>This is a <sub>subscript</sub> paragraph.</p>
+    <p>This is a <sup>superscript</sup> paragraph.</p>
+    <p>This is a <u>underline</u> paragraph.</p>
+    <p>This is a <b>bold</b> paragraph.</p>
+    <p>This is a <i>italic</i> paragraph.</p>
+    <p>This is a <q>quoted</q> paragraph.</p>
+    <p>This is a <cite>cited</cite> paragraph.</p>
+    <p>This is a <dfn>defined</dfn> paragraph.</p>
+    <p>This is a <code>code</code> paragraph.</p>
+    <p>This is a <kbd>keyboard</kbd> paragraph.</p>
+    <p>This is a <samp>samp</samp> paragraph.</p>
+    <p>This is a <var>var</var> paragraph.</p>
+
+    <hr>
+    <!-- Anchor tag -->
+    <h3>Anchor tag</h3>
+    <a href="http://www.google.com">Google</a>
+    <br>
+    <a href="/page2.html" target="_blank">page2</a>
+
+
+    <hr>
+    <h3>Image tag</h3>
+    <!-- How to insert inmage -->
+    <img src="/images/demo-image.jpg" alt="the image is not available" height="200px" width="200px">
+
+    <hr>
+    <!-- list in HTML -->
+    <!-- Unordered list -->
+    <h3>unordered list</h3>
+    <ul style="list-style-type: circle;">
+        <li>first item </li>
+        <li>second item </li>
+        <li>third item </li>
+    </ul>
+
+    <!-- ordered list -->
+    <h3>ordered list</h3>
+    <ol>
+        <li>first item </li>
+        <li>seond item</li>
+        <li>third item</li>
+    </ol>
+
+    <!-- definition list -->
+    <h3>definition list</h3>
+    <dl>
+        <dt>first item</dt>
+        <dd>first item description</dd>
+        <dt>second item</dt>
+        <dd>second item description</dd>
+    </dl>
+
+    <hr>
+    <!-- table in html -->
+    <h3>table</h3>
+
+    <table border="1">
+        <caption><mark> Time Table</mark></caption>
+        <tr>
+            <th rowspan="2">first</th>
+            <th>second</th>
+            <th>third</th>
+        </tr>
+        <tr>
+            <!-- <td>first</td> -->
+            <td colspan="2" style="text-align: center;">second</td>
+            <!-- <td>third</td> -->
+        </tr>
+        <tr>
+            <td>first</td>
+            <td>second</td>
+            <td>third</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <div class="container" style="background-color: aqua;">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+
+    <div class="container" style="background-color: cornflowerblue;">
+        <h2>Oslo</h2>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo has over 600.000 inhabitants.</p>
+    </div>
+
+    <div class="container" style="background-color: beige;">
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+    </div>
+
+    <hr>
+    <!-- Multimedia -->
+    <h3>Multimedia</h3>
+    <video width="320" height="240" autoplay>
+        <source src="images/mov_bbb.mp4" type="video/mp4">
+    </video>
+</body>
+
+</html>
