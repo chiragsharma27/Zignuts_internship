@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-5</title>
+</head>
+
+<body>
+    <label for="steps">Enter the steps: </label>
+    <input type="number" id="steps" required>
+    <button onclick="generateFibonacciSeries()">Generate Fibonacci Series</button>
+    <div id="fiboOutput"></div>
+
+
+    <script>
+        function generateFibonacciSeries() {
+            const steps = parseInt(document.getElementById('steps').value);
+
+            document.getElementById("steps").value = steps;
+
+            if (isNaN(steps) || steps <= 0) {
+                alert('Please enter a positive integer for the number of steps.');
+                return;
+            }
+
+            if (steps === 1) {
+                const fiboOutput = document.getElementById('fiboOutput');
+                fiboOutput.innerHTML = '0';
+                return;
+            }
+
+            let fibo = [0, 1];
+
+            for (let i = 2; i < steps; i++) {
+                fibo[i] = fibo[i - 1] + fibo[i - 2];
+            }
+
+            const fiboOutput = document.getElementById('fiboOutput');
+            fiboOutput.textContent = `Fibonacci Series for ${steps} steps: ${fibo.join(', ')}`;
+        }
+
+    </script>
+</body>
+
+</html>
